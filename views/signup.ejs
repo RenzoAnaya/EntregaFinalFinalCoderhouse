@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro</title>
+  </head>
+  <script>
+    const token = document.cookie.split('=')[1];
+    console.log(token);
+  </script>
+  <body>
+    <div>
+      <div>
+        <h1>Regístrate</h1>
+        <br />
+        <form
+          action="/signup"
+          method="post"
+          role="form"
+          autocomplete="off"
+        >
+          <div>
+            <input
+              id="fullname"
+              name="fullname"
+              placeholder="Nombre completo"
+              type="text"
+              required
+            />
+          </div>
+
+          <div>
+            <input
+              id="email"
+              name="email"
+              placeholder="Correo electrónico"
+              type="email"
+              required
+            />
+          </div>
+
+          <div>
+            <input
+              id="password1"
+              name="password1"
+              placeholder="Contraseña"
+              type="password"
+              required
+            />
+          </div>
+
+          <div>
+            <input
+              id="password2"
+              name="password2"
+              placeholder="Repite la contraseña"
+              type="password"
+              required
+            />
+          </div>
+
+          <div>
+            <input
+              id="phone"
+              name="phone"
+              placeholder="Teléfono"
+              type="tel"
+              required
+            />
+          </div>
+
+          <div>
+            <input
+              type="submit"
+              value="Registro"
+            />
+          </div>
+        </form>
+
+        <hr />
+
+        <div>
+          <button
+            id="login"
+            onclick="location.href = '/login'"
+          >
+            Ir a Login
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

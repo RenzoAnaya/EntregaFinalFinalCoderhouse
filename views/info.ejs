@@ -1,0 +1,22 @@
+<%- include('./partials/header.ejs') %>
+
+  <div>
+    <h2>Conectar</h2>
+    <div>
+      <p><%= config.port %></p>
+    </div>
+    <h2>URL base de datos</h2>
+    <div>
+      <p><%= config.mongodb %></p>
+    </div>
+    <h2>Mail de notificaciones</h2>
+    <div>
+      <p><%= config.MAIL_ETH_USER %></p>
+    </div>
+    <h2>Tiempo de expiración de sesión</h2>
+    <div>
+      <p><%= `${config.cookie_max_age / 50000} minutos` %></p>
+    </div>
+   
+  </div>
+</html>

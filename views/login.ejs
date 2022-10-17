@@ -1,0 +1,51 @@
+<%- include('./partials/header.ejs') %>
+
+  <body>
+    <div>
+      <div >
+        <h1>Login</h1>
+        <br />
+        <form
+          action="/login"
+          method="post"
+          role="form"
+          autocomplete="off"
+        >
+          <div>
+            <input
+              id="email"
+              name="email"
+              placeholder="Correo electrónico"
+              type="text"
+              required
+            />
+          </div>
+
+          <div>
+            <input
+              id="password"
+              name="password"
+              placeholder="Contraseña"
+              type="password"
+              required
+            />
+          </div>
+
+          <div>
+            <button type="submit">Iniciar sesión</button>
+          </div>
+        </form>
+
+        <hr />
+
+        <div>
+          <button
+            onclick="location.href = '/signup'"
+          >
+            Ir al Registro
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
